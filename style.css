@@ -1,0 +1,135 @@
+body {
+    background: url(img/background.jpg) no-repeat center;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+
+
+header  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 55px auto 26px auto;
+	opacity: 0.3;
+	transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	width: 431px;
+}
+
+header:hover {
+	opacity: 1;
+}
+
+.logo-icon {
+	background: url(img/logo-icon.png) no-repeat;
+	background-size: 100% 100%;
+	width: 111px;
+	height: 111px;
+	margin-right: 25px;
+}
+
+.logo {
+	background: url(img/logo.png) no-repeat;
+	background-size: 100% 100%;
+	width: 292px;
+	height: 78px;
+}
+
+form {
+	width: 382px;
+
+}
+
+fieldset {
+	border: none;
+	padding: 0px;
+}
+
+legend {
+	margin-bottom: 38px;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+}
+
+.inputs {
+	background-color: #f4f4f4;
+	width: 382px;
+	height: 419px;
+	border-top: 1px solid #ad8d91;
+	border-bottom: 1px solid #ad8d91;
+	border-radius: 3px;
+}
+
+.submit {
+	width: 337px;
+	height: 46px;
+	border: 1px solid #3b9a00;
+	border-radius: 3px;
+	margin-left: 23px;
+	color: #ffffff;
+
+	background: red;
+	background: -webkit-linear-gradient(#addc54, #7ec31f);
+	background: -o-linear-gradient(#addc54, #7ec31f);
+	background: -moz-linear-gradient(#addc54, #7ec31f);
+	background: linear-gradient(#addc54, #7ec31f);
+}
+
+.icon {
+	width: 59px;
+	height: 39px;
+	background-color: #f5f5f5;
+}
+
+.user, .padlock, .email, .location {
+	width: 59px;
+	height: 39px;
+}
+
+.border {
+	height: 30px;
+	border-right: 1px solid #e4e4e4;
+	margin-top: 0;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	border: 1px solid #c6c6c6;
+	border-radius: 3px;
+	width: 338px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+select {
+	width: 278px;
+}
+
+.textbox {
+	height: 39px;
+	padding-left: 20px;
+	border: none;
+	width: 278px;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+.terms {
+	margin-top: 13px;
+	margin-left: 22px;
+	font-size: 17px;
+}
+
+.terms input {
+	margin-right: 14px;
+}
