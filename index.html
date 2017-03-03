@@ -3,6 +3,7 @@
 <head>
 	<title>Challenge 1</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 	<header>
@@ -39,7 +40,7 @@
 				<div class="row">
 					<div class="location"></div>
 					<div class="border"></div>
-					<select required>
+					<select id="list" required>
 						<option selected disabled>Your Location</option>
 						<option value="saab">My Location</option>
 						<option value="opel">She`s Location</option>
@@ -47,12 +48,16 @@
 					</select>
 				</div>
 				<div class="terms">
-					<input type="checkbox" required>
-					<span>I have read and accept the terms of use</span>
+					<input type="checkbox" id="checkbox" required>
+					<label for="checkbox">
+						<span></span>I have read and accept the terms of use
+					</label>
+
 				</div>
 				<input class="submit" type="submit" value="Sign up">
 			</div>
 		</fieldset>
 	</form>
+	<script src="selectColor.js"></script>
 </body>
 </html>
