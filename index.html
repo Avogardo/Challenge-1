@@ -13,6 +13,7 @@
 
 	</header>
 
+	<div id="container">
 	<form>
 		<fieldset>
 			<legend>Register Form</legend>
@@ -48,16 +49,45 @@
 					</select>
 				</div>
 				<div class="terms">
-					<input type="checkbox" id="checkbox" required>
-					<label for="checkbox">
+					<input type="checkbox" id="acceptTerms" required>
+					<label for="acceptTerms">
 						<span></span>I have read and accept the terms of use
 					</label>
 
 				</div>
-				<input class="submit" type="submit" value="Sign up">
+				<input type="submit" value="Sign up">
 			</div>
 		</fieldset>
 	</form>
+
+	<form>
+		<fieldset>
+			<legend>Register Form</legend>
+			<div id="formEmail">
+				<div id="wrapper">
+					<div class="row">
+						<div class="user"></div>
+						<div class="border"></div>
+						<input type="text" class="textbox" placeholder="Username" required>
+					</div>
+					<div class="row">
+						<div class="email"></div>
+						<div class="border"></div>
+						<input type="email" class="textbox" placeholder="Your Email" required>
+					</div>
+					<textarea required placeholder="Type your message..."></textarea>
+					<div class="terms">
+						<input type="checkbox" id="acceptMail" required>
+						<label for="acceptMail">
+							<span></span>Send a copy to my Email
+						</label>
+					</div>
+					<input type="submit" value="Send Email">
+				</div>
+			</div>
+		</fieldset>
+	</form>
+	</div>
 	<script src="selectColor.js"></script>
 </body>
 </html>
