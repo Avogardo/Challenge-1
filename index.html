@@ -14,79 +14,153 @@
 	</header>
 
 	<div id="container">
-	<form>
-		<fieldset>
-			<legend>Register Form</legend>
-			<div class="inputs">
-				<div class="row">
-					<div class="user"></div>
-					<div class="border"></div>
-					<input type="text" class="textbox" placeholder="Username" required>
-				</div>
-				<div class="row">
-					<div class="padlock"></div>
-					<div class="border"></div>
-					<input type="password" class="textbox" placeholder="Password" required>
-				</div>
-				<div class="row">
-					<div class="padlock"></div>
-					<div class="border"></div>
-					<input type="password" class="textbox" placeholder="Confirm Password" required>
-				</div>
-				<div class="row">
-					<div class="email"></div>
-					<div class="border"></div>
-					<input type="email" class="textbox" placeholder="Email" required>
-				</div>
-				<div class="row">
-					<div class="location"></div>
-					<div class="border"></div>
-					<select id="list" required>
-						<option selected disabled>Your Location</option>
-						<option value="saab">My Location</option>
-						<option value="opel">She`s Location</option>
-						<option value="audi">He`s location</option>
-					</select>
-				</div>
-				<div class="terms">
-					<input type="checkbox" id="acceptTerms" required>
-					<label for="acceptTerms">
-						<span></span>I have read and accept the terms of use
-					</label>
+		<div id="containerLeft">
+			<form>
+				<fieldset>
+					<legend>Register Form</legend>
+					<div class="inputs">
+						<div class="row">
+							<div class="user"></div>
+							<div class="border"></div>
+							<input type="text" class="textbox" placeholder="Username" required>
+						</div>
+						<div class="row">
+							<div class="padlock"></div>
+							<div class="border"></div>
+							<input type="password" class="textbox" placeholder="Password" required>
+						</div>
+						<div class="row">
+							<div class="padlock"></div>
+							<div class="border"></div>
+							<input type="password" class="textbox" placeholder="Confirm Password" required>
+						</div>
+						<div class="row">
+							<div class="email"></div>
+							<div class="border"></div>
+							<input type="email" class="textbox" placeholder="Email" required>
+						</div>
+						<div class="row">
+							<div class="location"></div>
+							<div class="border"></div>
+							<select id="list" required>
+								<option selected disabled>Your Location</option>
+								<option value="saab">My Location</option>
+								<option value="opel">She`s Location</option>
+								<option value="audi">He`s location</option>
+							</select>
+						</div>
+						<div class="terms">
+							<input type="checkbox" id="acceptTerms" required>
+							<label for="acceptTerms">
+								<span></span>I have read and accept the terms of use
+							</label>
 
-				</div>
-				<input type="submit" value="Sign up">
-			</div>
-		</fieldset>
-	</form>
+						</div>
+						<input type="submit" value="Sign up">
+					</div>
+				</fieldset>
+			</form>
 
-	<form>
-		<fieldset>
-			<legend>Register Form</legend>
-			<div id="formEmail">
-				<div id="wrapper">
-					<div class="row">
-						<div class="user"></div>
-						<div class="border"></div>
-						<input type="text" class="textbox" placeholder="Username" required>
+			<form>
+				<fieldset>
+					<legend>Send Email</legend>
+					<div id="formEmail">
+						<div class="wrapper">
+							<div class="row">
+								<div class="user"></div>
+								<div class="border"></div>
+								<input type="text" class="textbox" placeholder="Username" required>
+							</div>
+							<div class="row">
+								<div class="email"></div>
+								<div class="border"></div>
+								<input type="email" class="textbox" placeholder="Your Email" required>
+							</div>
+							<textarea required placeholder="Type your message..."></textarea>
+							<div class="terms">
+								<input type="checkbox" id="acceptMail" required>
+								<label for="acceptMail">
+									<span></span>Send a copy to my Email
+								</label>
+							</div>
+							<input type="submit" value="Send Email">
+						</div>
 					</div>
-					<div class="row">
-						<div class="email"></div>
-						<div class="border"></div>
-						<input type="email" class="textbox" placeholder="Your Email" required>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="containerRight">
+			<form>
+				<fieldset>
+					<legend>Sign In Form</legend>
+					<div id="formSignIn">
+						<div class="wrapper">
+							<div class="row">
+								<div class="user"></div>
+								<div class="border"></div>
+								<input type="text" class="textbox" placeholder="Username" required>
+							</div>
+							<div class="row">
+								<div class="padlock"></div>
+								<div class="border"></div>
+								<input type="password" class="textbox" placeholder="Password" required>
+							</div>
+							<div class="terms">
+								<input type="checkbox" id="remember" required>
+								<label for="remember">
+									<span></span>Remember me
+								</label>
+							</div>
+							<input type="submit" value="Sign in">
+						</div>
 					</div>
-					<textarea required placeholder="Type your message..."></textarea>
-					<div class="terms">
-						<input type="checkbox" id="acceptMail" required>
-						<label for="acceptMail">
-							<span></span>Send a copy to my Email
-						</label>
+				</fieldset>
+			</form>
+
+			<form>
+				<fieldset>
+					<legend>Recover Form</legend>
+					<div id="formRecover">
+						<div class="wrapper">
+							<div class="row">
+								<div class="email"></div>
+								<div class="border"></div>
+								<input type="email" class="textbox" placeholder="Enter your Email" required>
+							</div>
+							<div class="row">
+								<div class="phone"></div>
+								<div class="border"></div>
+								<input type="tel" class="textbox" placeholder="Enter your Phone number" required>
+							</div>
+							<div class="buttons">
+							<input type="submit" value="Sign in">
+							<input type="submit" value="Done" disabled>
+							</div>
+						</div>
 					</div>
-					<input type="submit" value="Send Email">
-				</div>
-			</div>
-		</fieldset>
-	</form>
+				</fieldset>
+			</form>
+
+			<form>
+				<fieldset>
+					<legend>Subscribe Form</legend>
+					<div id="formSubscribe">
+						<div class="wrapper">
+							<div class="row">
+								<div class="email"></div>
+								<div class="border"></div>
+								<input type="email" class="textbox" placeholder="Enter your Email" required>
+							</div>
+							<div class="buttons">
+								<input type="submit" value="Subscribe">
+								<input id="secon-button" type="submit" value="No, Thanks">
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
 	</div>
 	<script src="selectColor.js"></script>
 </body>

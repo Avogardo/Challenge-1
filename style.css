@@ -110,7 +110,7 @@ legend {
 	height: 39px;
 }
 
-.user, .padlock, .email, .location {
+.user, .padlock, .email, .location, .phone {
 	width: 59px;
 	height: 39px;
 	background-position: center;
@@ -318,21 +318,128 @@ textarea:focus {
 	border: 1px solid #a5cda5;
 	background: #e9f3e9;
 	color: #7ec31f;
-
 }
 
-#wrapper {
+.wrapper {
 	position: absolute;
+	width: 100%;
 }
 
 #container {
-	width: 96%;
-	margin: 0 auto;
-
+	width: 100%;
 	display: flex;
-	justify-content: center;
+}
+
+#containerLeft {
+	width: 50%;
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-end;
 	flex-wrap: wrap;
 }
+
+#containerRight {
+	width: 50%;
+	margin-right: auto;
+
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+#formSignIn {
+	background-color: #f4f4f4;
+	width: 382px;
+	height: 236px;
+	border-radius: 3px;
+	position: relative;
+}
+
+#formSignIn:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: 20px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	top: -20px;
+	left: -20px;
+	z-index: -1;
+}
+
+#formRecover {
+	background-color: #f4f4f4;
+	width: 382px;
+	height: 260px;
+	border-radius: 3px;
+	position: relative;
+}
+
+#formRecover:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: 20px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	top: -20px;
+	left: -20px;
+	z-index: -1;
+}
+
+#formSubscribe {
+	background-color: #f4f4f4;
+	width: 382px;
+	height: 197px;
+	border-radius: 3px;
+	position: relative;
+}
+
+#formSubscribe:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border: 20px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	top: -20px;
+	left: -20px;
+	z-index: -1;
+}
+
+input[type=submit]:disabled {
+	background: #beed65;
+	background: -webkit-linear-gradient(#beed65, #7ec31f);
+	background: -o-linear-gradient(#beed65, #7ec31f);
+	background: -moz-linear-gradient(#beed65, #7ec31f);
+	background: linear-gradient(#beed65, #7ec31f);
+}
+
+#containerRight form:nth-child(1), form:nth-child(2) {
+	margin-bottom: 0px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.buttons input[type=submit]:first-child {
+	margin-left: 20px;
+	width: 40%;
+}
+
+.buttons input[type=submit]:last-child {
+	margin-right: 20px;
+	width: 40%;
+
+}
+
+#secon-button {
+	background: red;
+}
+
 
 @media screen and (max-width: 1050px) {
 form {
